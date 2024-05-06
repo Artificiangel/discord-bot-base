@@ -1,8 +1,8 @@
+from logs import get_logger; log = get_logger(__name__)
+
 import os
 import traceback
 import paths
-import logging
-log = logging.getLogger(__name__)
 from enum import Enum
 
 class ReloadState(Enum):

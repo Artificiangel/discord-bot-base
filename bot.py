@@ -1,25 +1,15 @@
+from logs import get_logger; log = get_logger(__name__)
+
 import discord
 from discord.ext import commands
 import aiohttp
 import asyncio
 import os
-import logging
 import config
 import paths
 
 from extensions import ExtensionWrap, ReloadState
 
-# logger = logging.getLogger('discord')
-# logger.setLevel(logging.DEBUG)
-
-# TODO https://stackoverflow.com/questions/6729268/log-messages-appearing-twice-with-python-logging
-# Remove handler from discord logger to stop double logs.
-
-logging.basicConfig(format='[{asctime}] [{levelname:<8}] {name}: {message}',
-                    datefmt='%Y-%m-%d %H:%M:%S',
-                    style='{',
-                    level=logging.DEBUG)
-log = logging.getLogger(__name__)
 
 intents = discord.Intents.default()
 intents.members = True
