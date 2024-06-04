@@ -1,4 +1,6 @@
-from logs import get_logger; log = get_logger(__name__)
+from au.meta.logs import get_logger; log = get_logger(__name__)
+from au import setup
+setup(debug=True,log_file=True)
 
 import discord
 from discord.ext import commands

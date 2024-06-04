@@ -1,2 +1,2 @@
-py -3.10 bot.py
+py -3.11 bot.py
 pause

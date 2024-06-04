@@ -1,4 +1,4 @@
-from logs import get_logger; log = get_logger(__name__)
+from au.meta.logs import get_logger; log = get_logger(__name__)
 
 import os
 import traceback
